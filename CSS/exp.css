@@ -1,0 +1,200 @@
+
+.experts {
+    padding: 70px 20px;
+    background: var(--bg-section);
+    text-align: center;
+     position: relative;
+    overflow: hidden;
+}
+
+.experts h1 {
+    font-size: 2.4rem;
+    margin-bottom: 45px;
+    color: #222;
+    font-weight: 700;
+}
+
+
+.containerrr {
+    display: flex;
+    gap: 22px;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.box2 {
+
+min-width: calc(25% - 15px); 
+    padding: 15px; 
+
+
+
+    position: relative;
+   
+    background: var(--bg-section);
+    backdrop-filter: blur(6px);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    text-align: center;
+}
+
+
+
+.box2 img {
+    width: 80%;
+    height: 60%;
+    object-fit: cover;
+    margin-bottom: 15px;
+    border-radius: 50%;
+    transition: transform 0.5s ease, filter 0.5s ease;   
+    filter: grayscale(100%);
+}
+
+
+.box2:hover img {
+    filter: grayscale(0%);
+}
+
+
+.box2 h3 {
+    font-size: 1.25rem;
+    margin-bottom: 4px;
+    color: #222;
+    font-weight: 600;
+}
+
+.box2 p {
+    font-size: 0.95rem;
+    color: #777;
+    letter-spacing: 0.3px;
+}
+
+
+.dots2 {
+    display: flex;
+    justify-content: center;
+    margin-top: 35px;
+}
+
+.dots2 .dot2 {
+    width: 12px;
+    height: 12px;
+    background: #d0d0d0;
+    border-radius: 50%;
+    margin: 0 6px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.dots2 .dot2.active {
+    background: blue;
+    transform: scale(1.2);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.expert-bg-layer {
+    position: absolute;
+    width: 120%;
+    height: 300px;
+    left: -10%;
+    z-index: 0;
+}
+
+
+.layer1 {
+    top: -140px;
+    background: linear-gradient(120deg, #0066ff, #00c6ff);
+    opacity: 0.12;
+    clip-path: ellipse(70% 100% at 50% 0%);
+}
+
+
+.layer2 {
+    top: 120px;
+    background: linear-gradient(90deg, #000000, transparent);
+    opacity: 0.05;
+    transform: rotate(-4deg);
+}
+
+
+.layer3 {
+    bottom: -160px;
+    background: linear-gradient(120deg, #0066ff, #00c6ff);
+    opacity: 0.10;
+    clip-path: ellipse(70% 100% at 50% 100%);
+}
+
+
+.experts h1,
+.containerrr,
+.dots2 {
+    position: relative;
+    z-index: 2;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ===== TABLET ===== */
+@media (max-width: 992px) {
+    .box2 {
+        min-width: calc(50% - 10px);
+    }
+
+    .experts h1 {
+        font-size: 2.1rem;
+    }
+}
+
+/* ===== MOBILE ===== */
+@media (max-width: 576px) {
+    .experts {
+        padding: 45px 15px;
+    }
+
+    .box2 {
+        min-width: 100%;
+    }
+
+    .experts h1 {
+        font-size: 1.8rem;
+    }
+
+    .box2 img {
+        height: 190px;
+        width: 190px;
+    }
+}
